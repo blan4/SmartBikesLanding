@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.6.0)
+    bootstrap-sass (3.2.0.0)
+      sass (~> 3.2)
     execjs (2.2.1)
     jsmin (1.0.1)
     json (1.8.1)
@@ -46,6 +48,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   pg
   rack-parser
   sass

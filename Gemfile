@@ -8,6 +8,7 @@ gem 'sinatra-contrib', :require => 'sinatra/json'
 gem 'sequel'
 gem 'slim'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
+gem 'bootstrap-sass'
 gem 'sass'
 gem 'uglifier'
 gem 'sqlite3', group: :development
