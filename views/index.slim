@@ -8,7 +8,7 @@ html
     == js  :app
 
   body
-    header.navbar.navbar-default.navbar-fixed-top
+    header.navbar.main-navbar.navbar-fixed-top
       .raw
         .navbar-header
           button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bar"
@@ -21,13 +21,42 @@ html
     
     .section
       .raw
-        .subscription.col-md-6.col-sm-12
-          .description
-            h1 Smart Bikes
-            p Омичи! Система проката умных велосипедов в процессе разработки!
-          .subscription-form
-            h2 Хочу прокатиться первым
-            form#js-subscribe
-              input type='email' name='email'
-              input type='submit' value='Subscribe'
-            #responseBox
+        .content
+          .sub-content
+            == img '/images/bike_pic.jpg', class: 'img-responsive'
+            .subscription
+              .description
+                h1 Smart Bikes
+                p Омичи! Система проката умных велосипедов в процессе разработки!
+                .subscription-form
+                  h2 Хочу прокатиться первым
+                  form.form-inline#js-subscribe
+                    input.form-control type='email' name='email'
+                    input.btn.btn-green type='submit' value='Subscribe' 
+                  #responseBox
+    
+    .navbar.my-navbar
+      .raw
+        .navbar-header
+          h2.nav-word О проекте
+
+    section.right
+      .raw
+        .col-md-6
+          == img '/images/pic_1.jpg', class: 'img-responsive'
+        .col-md-6
+          h1 Smart Bikes это
+
+    section.left
+      .raw
+        .col-md-6
+          h1 Текст 1
+        .col-md-6
+          == img '/images/pic_1.jpg', class: 'img-responsive'        
+
+    section.right
+      .raw
+        .col-md-6
+          == img '/images/pic_1.jpg', class: 'img-responsive'
+        .col-md-6
+          h1 Текст 2

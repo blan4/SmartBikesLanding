@@ -1,11 +1,65 @@
 @import "bootstrap";
+$my-green: #83c507;
 
 body {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .subscription {
+  bottom: 170px;
+  padding-left: 30px;
+  position: absolute;
   .description {
-    color: "#165a63";
+    width: 735px;
+    background-color: rgba(1,152,161,0.5);
   }
+  .subscription-form {
+      width: 735px;
+      bottom: 0;
+      background-color: rgba(1,152,161,1);
+    }
 }
+
+.content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.sub-content {
+  position: relative;
+}
+
+.btn {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: $my-green;
+}
+
+.form-control {
+  height: auto !important;
+  border-radius: 0;
+}
+
+.my-navbar {
+  margin: 0;
+  background-color: $my-green;
+  color: #ffffff;
+}
+
+.main-navbar {
+  background-color: #ffffff;
+}
+
+.nav-word {
+  text-transform: uppercase;
+}
+
+section.right {
+  height: 600px;
+}
+
+section.left {
+  height: 600px;
+} 
