@@ -1,23 +1,67 @@
 @import "bootstrap";
-$my-green: #83c507;
+
+$color-1: #004e78;
 
 body {
   padding-top: 50px;
 }
 
+h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.big {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+p.small {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 35px;
+  color: #ffffff;
+}
+
 .subscription {
-  bottom: 170px;
-  padding-left: 30px;
+  bottom: 16%;
+  margin-left: 4.2%;
   position: absolute;
-  .description {
-    width: 735px;
+  width: 45.83%;
+  .description {    
     background-color: rgba(1,152,161,0.5);
   }
   .subscription-form {
-      width: 735px;
-      bottom: 0;
-      background-color: rgba(1,152,161,1);
-    }
+    bottom: 0;
+    background-color: rgba(1,152,161,1);
+  }
+  .text {
+    margin-left: 8.5%;
+  }
+  .subscription-input {
+    width: 51%;
+  }
 }
 
 .content {
@@ -34,7 +78,7 @@ body {
 .btn {
   border-radius: 0;
   color: #ffffff;
-  background-color: $my-green;
+  background-color: $color-1;
 }
 
 .form-control {
@@ -44,16 +88,13 @@ body {
 
 .my-navbar {
   margin: 0;
-  background-color: $my-green;
+  background-color: $color-1;
   color: #ffffff;
+  border-radius: 0;
 }
 
 .main-navbar {
   background-color: #ffffff;
-}
-
-.nav-word {
-  text-transform: uppercase;
 }
 
 section.right {
@@ -63,3 +104,17 @@ section.right {
 section.left {
   height: 600px;
 } 
+
+.navbar-header {
+  margin-left: 8.3%;
+}
+
+.img-sized {
+  width: 540px;
+  height: auto;
+}
+
+.article {
+  margin-left: 10.4%;
+  margin-right: 10.4%;
+}

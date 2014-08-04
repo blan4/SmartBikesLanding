@@ -4,6 +4,7 @@ html
     title Smart Bikes
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+    link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'
     == css :application, :media => 'screen'
     == js  :app
 
@@ -17,7 +18,8 @@ html
             span.icon-bar
             span.icon-bar
 
-          a.navbar-brand href='/' SmartBikes
+          h2 
+            a href='/' SmartBikes
     
     .section
       .raw
@@ -26,14 +28,19 @@ html
             == img '/images/bike_pic.jpg', class: 'img-responsive'
             .subscription
               .description
-                h1 Smart Bikes
-                p Омичи! Система проката умных велосипедов в процессе разработки!
+                .text
+                  h1.big Smart Bikes
+                  p Омичи!
+                  p Система проката умных
+                  p велосипедов в процессе разработки!
                 .subscription-form
-                  h2 Хочу прокатиться первым
-                  form.form-inline#js-subscribe
-                    input.form-control type='email' name='email'
-                    input.btn.btn-green type='submit' value='Subscribe' 
-                  #responseBox
+                  .text
+                    h3 Хочу прокатиться первым!
+                    form.form-inline#js-subscribe
+                      input.form-control.subscription-input type='email' name='email'
+                      input.btn.btn-green type='submit' value='Subscribe'
+                    p.small Вы можете отменить подписку в любой момент. 
+                    #responseBox
     
     .navbar.my-navbar
       .raw
@@ -42,21 +49,24 @@ html
 
     section.right
       .raw
-        .col-md-6
-          == img '/images/pic_1.jpg', class: 'img-responsive'
-        .col-md-6
-          h1 Smart Bikes это
+        .article
+          .col-md-6
+            == img '/images/pic_1.jpg', class: 'img-sized'
+          .col-md-6
+            h1 Smart Bikes это
 
     section.left
-      .raw
-        .col-md-6
-          h1 Текст 1
-        .col-md-6
-          == img '/images/pic_1.jpg', class: 'img-responsive'        
+      .article
+        .raw
+          .col-md-6
+            h1 Текст 1
+          .col-md-6
+            == img '/images/pic_1.jpg', class: 'img-sized'
 
     section.right
-      .raw
-        .col-md-6
-          == img '/images/pic_1.jpg', class: 'img-responsive'
-        .col-md-6
-          h1 Текст 2
+      .article
+        .raw
+          .col-md-6
+            == img '/images/pic_1.jpg', class: 'img-sized'
+          .col-md-6
+            h1 Текст 2
