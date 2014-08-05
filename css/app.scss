@@ -2,6 +2,8 @@
 ---
 
 $color-1: #004e78;
+$min-width: 1150px;
+$x-min-width: 992px;
 
 h1 {
   font-family: Roboto;
@@ -39,10 +41,19 @@ p {
   margin: 0;
 }
 
+@media only screen and (min-width: $min-width) {
+  .subscription {
+    position: absolute;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: $min-width) {
+  .subscription {
+    width: 100%;
+  }
+}
 .subscription {
   bottom: 15%;
-  position: absolute;
-  width: 400px;
   .description {
     background-color: rgba(1,152,161,0.5);
   }
@@ -52,9 +63,6 @@ p {
   }
   .text {
     margin-left: 40px;
-  }
-  .subscription-input {
-    width: 400px;
   }
 }
 
@@ -70,11 +78,13 @@ p {
   font-size: 14px;
 }
 
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 940px;
-}
+@media only screen and (min-width: $min-width) {  
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: $min-width;
+  }
+} 
 
 .sub-content {
   position: relative;
@@ -146,7 +156,12 @@ section {
 .bordered {
   border-bottom: 9px solid #0198a1;
   padding-bottom: 70px;
-  padding-top: 70px;
+}
+
+@media only screen and (min-width: $x-min-width) {
+  .bordered {
+    padding-top: 70px;
+  }  
 }
 
 .bordered-picture {
