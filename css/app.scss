@@ -3,23 +3,21 @@
 
 $color-1: #004e78;
 
-body {
-  padding-top: 50px;
-}
-
 h1 {
   font-family: Roboto;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 27px;
 }
 
 .big {
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin: 0;
 }
 
 h2 {
+  margin-top: 10px;
   text-transform: uppercase;
 }
 
@@ -31,22 +29,21 @@ h3 {
 
 p.privacy {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 p {
   font-family: Roboto;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
+  margin: 0;
 }
 
 .subscription {
-  bottom: 23%;
-  margin-left: 4.2%;
+  bottom: 15%;
   position: absolute;
-  width: 45.83%;
+  width: 400px;
   .description {
-    min-width: 310px;    
     background-color: rgba(1,152,161,0.5);
   }
   .subscription-form {
@@ -54,36 +51,29 @@ p {
     background-color: rgba(1,152,161,1);
   }
   .text {
-    margin-left: 8.5%;
+    margin-left: 40px;
   }
   .subscription-input {
-    width: 51%;
-    min-width: 310px;
+    width: 400px;
   }
 }
 
 .btn {
-  height: 56px;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Roboto;
-  width: 150px;
+  width: 92px;
 }
 
-.form-control-fixed {
-  height: 56px !important;
-  width: 450px; 
-  padding: 6px 12px;
-  border: 1px solid #ccc;
+.form-control {
   font-weight: 400;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .content {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
 }
 
 .sub-content {
@@ -102,48 +92,29 @@ p {
 }
 
 .my-navbar {
+  width: 100%;
   margin: 0;
   background-color: $color-1;
   color: #ffffff;
   border-radius: 0;
 }
 
-.main-navbar {
-  background-color: #ffffff;
-}
-
-section.right {
-  height: 600px;
-}
-
-section.left {
-  height: 600px;
-} 
-
-.navbar-header {
-  margin-left: 8.3%;
-}
-
-.img-sized {
-  width: 540px;
-  height: auto;
-}
-
-.article {
-  margin-left: 10.4%;
-  margin-right: 10.4%;
+header.logo {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
 }
 
 label {
   padding-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: block;
 }
 
 span {
   font-family: Roboto;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 15px;
 }
 
 .white {
@@ -156,10 +127,16 @@ span {
 
 .light {
   font-weight: 300;
+  text-transform: none;
+  color: #636363;
+}
+
+h1.light {
+  font-size: 48px;
 }
 
 p.light {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 section {
@@ -167,12 +144,40 @@ section {
 }
 
 .bordered {
-  border-bottom: 3px solid #0198a1;
+  border-bottom: 9px solid #0198a1;
   padding-bottom: 70px;
   padding-top: 70px;
 }
 
+.bordered-picture {
+  border-bottom: 9px solid #0198a1;
+}
+
 .site-footer {
   height: 100%;
+  width: 100%;
   background-color: #0198a1;
+  overflow: hidden;
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto;
+    color: #ffffff;
+    vertical-align: middle;
+  }
+  .likesBox {
+    display: inline-block;
+  }
+
+  .copyright {
+    display: inline-block;
+  }
+}
+
+.text-block {
+  padding-left: 0;
+}
+
+#responseBox {
+  height: 30px;
 }
