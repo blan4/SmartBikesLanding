@@ -6,19 +6,21 @@
         <div class="subscription">
           <div class="description">
             <div class="text">
-              <h1 class="big">Smart Bikes</h1>
-              <p>Омичи!</p>
-              <p>Система проката умных</p>
-              <p>велосипедов в процессе разработки!</p>
+              <h1 class="big white">Smart Bikes</h1>
+              <p class="white">Омичи!</p>
+              <p class="white">Система проката умных</p>
+              <p class="white">велосипедов в процессе разработки!</p>
             </div>
             <div class="subscription-form">
               <div class="text">
-                <h3>Хочу прокатиться первым!</h3>
                 <form class="form-inline" id="js-subscribe">
-                  <input class="form-control subscription-input" name="email" type="email" />
+                  <label for="entry_email">
+                    <span class="white">Хочу прокатиться первым!</span>
+                  </label>
+                  <input placeholder="Адрес эл. почты" class="form-control-fixed subscription-input" id="entry_email" name="email" type="email" />
                   <input class="btn btn-green" type="submit" value="Subscribe" />
                 </form>
-                <p class="small">Вы можете отменить подписку в любой момент. </p>
+                <p class="privacy white">Вы можете отменить подписку в любой момент. </p>
                 <div id="likesBox">
                   <div id="vkLike"></div>
                 </div>

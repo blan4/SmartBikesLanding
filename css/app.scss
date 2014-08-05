@@ -1,8 +1,6 @@
 ---
 ---
 
-//@import "bootstrap";
-
 $color-1: #004e78;
 
 body {
@@ -13,46 +11,42 @@ h1 {
   font-family: Roboto;
   font-weight: 300;
   text-transform: uppercase;
-  color: #ffffff;
+  font-size: 52px;
 }
 
 .big {
-  padding-top: 90px;
-  padding-bottom: 80px;
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 
 h2 {
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 h3 {
   font-family: Roboto;
   font-weight: 400;
   font-size: 32px;
-  color: #ffffff;
 }
 
-p.small {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 22px;
-  color: #ffffff;
+p.privacy {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 p {
   font-family: Roboto;
   font-weight: 400;
-  font-size: 35px;
-  color: #ffffff;
+  font-size: 24px;
 }
 
 .subscription {
-  bottom: 16%;
+  bottom: 23%;
   margin-left: 4.2%;
   position: absolute;
   width: 45.83%;
-  .description {    
+  .description {
+    min-width: 310px;    
     background-color: rgba(1,152,161,0.5);
   }
   .subscription-form {
@@ -64,7 +58,23 @@ p {
   }
   .subscription-input {
     width: 51%;
+    min-width: 310px;
   }
+}
+
+.btn {
+  height: 56px;
+  width: 150px;
+}
+
+.form-control-fixed {
+  height: 56px !important;
+  width: 450px; 
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  font-weight: 400;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
 .content {
@@ -120,4 +130,42 @@ section.left {
 .article {
   margin-left: 10.4%;
   margin-right: 10.4%;
+}
+
+label {
+  padding-top: 15px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+span {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.blacky {
+  color: #555555;
+}
+
+.light {
+  font-weight: 300;
+}
+
+p.light {
+  font-size: 20px;
+}
+
+section {
+  display: block;
+}
+
+.bordered {
+  border-bottom: 3px solid #0198a1;
+  padding-bottom: 70px;
+  padding-top: 70px;
 }
