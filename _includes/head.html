@@ -6,9 +6,19 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <link rel="image_src" href="{{ site.url }}/logo.jpg" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+    <script type="text/javascript" src="{{ "js/likes.js" | prepend: site.baseurl }}"></script>
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:image" content="{{ site.url }}/logo.jpg" />
+    <meta property="og:description" content="{{ site.description }}">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ "css/app.css" | prepend: site.baseurl }}">
 </head>
