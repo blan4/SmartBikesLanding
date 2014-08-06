@@ -1,11 +1,9 @@
 # Site settings
 title: Smart Bikes
 email: ilya@smart-bikes.ru
-description: "Smart bikes"
+description: "Простой, удобный и качественный сервис проката современных велосипедов с использованием самых передовых технологий."
 baseurl: ""
 url: "http://smart-bikes.ru"
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
