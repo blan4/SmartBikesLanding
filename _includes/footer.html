@@ -4,10 +4,18 @@
       <p>&copy; Smart Bikes, 2014</p>
     </div>
     <div class="likesBox">      
-      <img src="img/vk.jpg" class="social-icon" />
+      <a href="http://vk.com/share.php?url={{ site.url }}" onmouseup="this._btn=event.button;this.blur();" onclick="return VK.Share.click(1, this);" >
+        <img src="img/vk.jpg" class="social-icon" />
+      </a>
       <img src="img/ok.jpg" class="social-icon" />
-      <img src="img/twitter.jpg" class="social-icon" />
-      <img src="img/plus.jpg" class="social-icon" />
+      <a href="https://twitter.com/share?url={{ site.url }}" class="twitter-share-button" data-lang="en">
+        <img src="img/twitter.jpg" class="social-icon" />
+      </a>
+
+      <a href="https://plus.google.com/share?url={{ site.url }}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+        <img src="img/plus.jpg" class="social-icon" />
+      </a>
     </div>
   </div>
 </div>
