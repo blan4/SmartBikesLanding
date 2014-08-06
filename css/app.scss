@@ -54,6 +54,14 @@ p {
   .img-respons {
     width: 100%;
   }
+
+  input {
+    display: inline-block !important;
+  }
+
+  input.form-control {
+    width: auto !important;
+  }
 }
 .subscription {
   bottom: 15%;
