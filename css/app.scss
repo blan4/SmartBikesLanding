@@ -51,6 +51,9 @@ p {
   .subscription {
     width: 100%;
   }
+  .img-respons {
+    width: 100%;
+  }
 }
 .subscription {
   bottom: 15%;
@@ -189,8 +192,10 @@ section {
   }
 }
 
-.text-block {
-  padding-left: 0;
+@media only screen and (min-width: $min-width)  {
+  .text-block {
+    padding-left: 0;
+  }  
 }
 
 #responseBox {
