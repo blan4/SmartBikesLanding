@@ -239,6 +239,12 @@ section {
     vertical-align: middle;
   }
 
+  p.share {
+    display: inline;
+    font-weight: 400;
+    margin-right: 20px;
+  }
+
   .copyright {
     margin-top: 38px;
     display: inline-block;
@@ -246,11 +252,11 @@ section {
 
   .likesBox {
     display: inline-block;
-    margin-top: 26px;
+    margin-top: 36px;
     margin-right: 20px;
     float: right;
     img.social-icon {
-      width: 38px;
+      width: 30px;
       height: auto;
       margin-left: 3px;
       margin-right: 3px;
@@ -271,4 +277,8 @@ section {
 
 #responseBox {
   height: 30px;
+}
+
+.righter {
+  float: right;
 }
