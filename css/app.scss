@@ -74,6 +74,8 @@ p {
   }
   .text {
     margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 30px;
   }
 }
 
@@ -81,6 +83,12 @@ p {
   font-size: 14px;
   font-family: Roboto;
   width: 92px;
+}
+
+.btn-big {
+  font-size: 14px;
+  font-family: Roboto;
+  width: 100% !important; 
 }
 
 .form-control {
