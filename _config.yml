@@ -4,6 +4,7 @@ email: ilya@smart-bikes.ru
 description: "Простой, удобный и качественный сервис проката современных велосипедов с использованием самых передовых технологий."
 baseurl: ""
 url: "http://smart-bikes.ru"
+form_url: "https://docs.google.com/forms/d/1rwuB_paVkJCBi5300xpx2KFHAO-EcYEHhFElbua0f78/viewform"
 
 # Build settings
 markdown: kramdown
