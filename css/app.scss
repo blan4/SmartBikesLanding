@@ -3,24 +3,28 @@
 
 $color-1: #004e78;
 $min-width: 1150px;
-$x-min-width: 992px;
+$x-min-width: 940px;
 
 h1 {
   font-family: Roboto;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 27px;
+  letter-spacing: 0.8px;
 }
 
 .big {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 36px;
+  padding-bottom: 24px;
   margin: 0;
 }
 
 h2 {
-  margin-top: 10px;
+  margin-top: 9px;
   text-transform: uppercase;
+  font-weight: 300;
+  font-family: Roboto;
+  letter-spacing: 1.4px;
 }
 
 h3 {
@@ -39,12 +43,14 @@ p {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
+  letter-spacing: 0.9px;
+  line-height: 130%;
 }
 
 @media only screen and (min-width: $min-width) {
   .subscription {
-    position: absolute;
     width: 400px;
+    margin-top: 220px;
   }
 }
 @media only screen and (max-width: $min-width) {
@@ -70,12 +76,18 @@ p {
   }
   .subscription-form {
     bottom: 0;
+    margin-top: 35px;
     background-color: rgba(1,152,161,1);
   }
   .text {
     margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 30px;
+    margin-right: 37px;
+  }
+  .text-aligned {
+    margin-left: 38px;
+    margin-right: 34px;
+    padding-top: 41px;
+    padding-bottom: 49px;
   }
 }
 
@@ -90,9 +102,12 @@ p {
 }
 
 .btn-big {
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 14px;
   font-family: Roboto;
-  width: 100% !important; 
+  width: 100% !important;
+  letter-spacing: 1px; 
 }
 
 .form-control {
@@ -105,12 +120,15 @@ p {
   .content {
     margin-left: auto;
     margin-right: auto;
-    width: $min-width;
+    width: $x-min-width;
   }
 } 
 
 .sub-content {
   position: relative;
+  overflow: hidden;
+  height: 586px;
+  background: url("/img/background.jpg") center no-repeat;
 }
 
 .btn {
@@ -138,6 +156,12 @@ header.logo {
   width: 100%;
 }
 
+@media only screen and (min-width: $min-width) {
+  header.logo {
+    margin-top: 46px;
+  }
+}
+
 label {
   padding-top: 15px;
   margin-bottom: 5px;
@@ -159,6 +183,7 @@ span {
 }
 
 .light {
+  font-family: Roboto;
   font-weight: 300;
   text-transform: none;
   color: #636363;
@@ -166,6 +191,8 @@ span {
 
 h1.light {
   font-size: 48px;
+  letter-spacing: 1.1px;
+  margin-bottom: 20px;
 }
 
 p.light {
@@ -177,18 +204,26 @@ section {
 }
 
 .bordered {
-  border-bottom: 9px solid #0198a1;
+  border-bottom: 6px solid #0198a1;
   padding-bottom: 70px;
 }
 
 @media only screen and (min-width: $x-min-width) {
   .bordered {
-    padding-top: 70px;
+    padding-top: 45px;
   }  
 }
 
 .bordered-picture {
-  border-bottom: 9px solid #0198a1;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 6px solid #0198a1;
+}
+
+.background-picture {
+  background: url("/img/background_second.jpg") center no-repeat;
+  overflow: hidden;
+  height: 408px;
 }
 
 .site-footer {
@@ -224,7 +259,10 @@ section {
     }
   }
 }
-
+.text-block {
+  margin-top: 31px;
+  padding-right: 0;
+}
 @media only screen and (min-width: $min-width)  {
   .text-block {
     padding-left: 0;
