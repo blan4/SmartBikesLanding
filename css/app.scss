@@ -120,6 +120,10 @@ p {
   overflow: hidden;
   height: 586px;
   background: url("/img/background.jpg") center no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .btn {
@@ -213,6 +217,10 @@ section {
   background: url("/img/background_second.jpg") center no-repeat;
   overflow: hidden;
   height: 408px;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .site-footer {
