@@ -290,3 +290,17 @@ section {
     float: right;
   }
 }
+
+.map-container {
+  padding: 0;
+}
+
+.map {
+  background: url("/img/map.jpg") center no-repeat;
+  overflow: hidden;
+  height: 600px;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; 
+}
