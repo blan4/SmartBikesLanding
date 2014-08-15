@@ -7,14 +7,14 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <link rel="image_src" href="{{ site.url }}/logo.jpg" />
+    <link rel="image_src" href="img/{{ site.url }}/logo.png" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
     <script type="text/javascript" src="{{ "js/likes.js" | prepend: site.baseurl }}"></script>
 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:image" content="{{ site.url }}/logo.png" />
+    <meta property="og:image" content="img/{{ site.url }}/logo.png" />
     <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:locale" content="ru_RU" />
