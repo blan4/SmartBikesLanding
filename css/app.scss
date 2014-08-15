@@ -120,6 +120,12 @@ p {
   width: $x-min-width;
 } 
 
+@media only screen and (max-width: 990px) {
+  .extra-margin {
+    margin-left: 20px;
+  }
+}
+
 @media only screen and (max-width: $x-min-width) {
   .content {
     width: auto;
