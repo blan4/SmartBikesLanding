@@ -86,7 +86,11 @@ p {
 }
 
 .btn:hover {
-  color: #ffffff;
+  color: #0198a1 !important;
+}
+
+.btn:active {
+  background-color: #06d7e3;
 }
 
 .btn:visited {
