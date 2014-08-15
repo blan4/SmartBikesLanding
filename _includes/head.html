@@ -14,8 +14,10 @@
     <script type="text/javascript" src="{{ "js/likes.js" | prepend: site.baseurl }}"></script>
 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:image" content="{{ site.url }}/logo.jpg" />
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.url }}/logo.png" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:locale" content="ru_RU" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
