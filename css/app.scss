@@ -95,7 +95,7 @@ p {
 
 @media only screen and (max-width: $ultra-min-width) {
   .subscription {
-    .text-aligned: {
+    .text-aligned {
       margin-left: 8px;
       margin-right: 8px;
     }
@@ -104,7 +104,7 @@ p {
 
 @media only screen and (max-width: $ultra-min-width - 50) {
   .subscription {
-    .text-aligned: {
+    .text-aligned {
       margin-left: 0;
       margin-right: 0;
     }
