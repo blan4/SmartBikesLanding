@@ -5,6 +5,7 @@ $color-1: #004e78;
 $min-width: 1150px;
 $x-min-width: 940px;
 $xs-min-width: 470px;
+$ultra-min-width: 310px;
 
 h1 {
   font-family: Roboto;
@@ -68,8 +69,8 @@ p {
     margin-right: 37px;
   }
   .text-aligned {
-    margin-left: 38px;
-    margin-right: 37px;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
     padding-top: 23px;
     padding-bottom: 30px;
   }
@@ -82,6 +83,15 @@ p {
   .small-no-margin {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: $ultra-min-width) {
+  .subscription {
+    .text-aligned: {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 
@@ -133,6 +143,12 @@ p {
 @media only screen and (max-width: 990px) {
   .extra-margin {
     margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: $ultra-min-width) {
+  .extra-margin {
+    margin-left: 10px;
   }
 }
 
