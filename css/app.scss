@@ -5,7 +5,7 @@ $color-1: #004e78;
 $min-width: 1150px;
 $x-min-width: 940px;
 $xs-min-width: 470px;
-$ultra-min-width: 310px;
+$ultra-min-width: 350px;
 
 h1 {
   font-family: Roboto;
@@ -86,7 +86,7 @@ p {
   }
 }
 
-@media only screen and (max-width: $ultra-min-width) {
+@media only screen and (max-width: $ultra-min-width - 50) {
   .subscription {
     .text-aligned: {
       margin-left: 0;
