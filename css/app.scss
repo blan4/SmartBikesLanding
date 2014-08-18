@@ -93,6 +93,15 @@ p {
   }
 }
 
+@media only screen and (max-width: $ultra-min-width) {
+  .subscription {
+    .text-aligned: {
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+}
+
 @media only screen and (max-width: $ultra-min-width - 50) {
   .subscription {
     .text-aligned: {
@@ -155,7 +164,7 @@ p {
 
 @media only screen and (max-width: $ultra-min-width) {
   .extra-margin {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 
