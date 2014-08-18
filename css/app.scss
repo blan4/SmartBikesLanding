@@ -4,14 +4,14 @@
 $color-1: #004e78;
 $min-width: 1150px;
 $x-min-width: 940px;
-$xs-min-width: 500px;
+$xs-min-width: 470px;
 
 h1 {
   font-family: Roboto;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 27px;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -55,9 +55,6 @@ p {
 .subscription {
   width: 400px;
   margin-top: 220px;
-}
-
-.subscription {
   .description {
     background-color: rgba(1,152,161,0.5);
   }
@@ -72,9 +69,19 @@ p {
   }
   .text-aligned {
     margin-left: 38px;
-    margin-right: 34px;
-    padding-top: 41px;
-    padding-bottom: 49px;
+    margin-right: 37px;
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: $xs-min-width) {
+  .subscription {
+    width: 100%;
+  }
+  .small-no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -98,9 +105,10 @@ p {
 }
 
 .btn-big {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  font-size: 14px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 19px;
+  font-weight: 300;
   font-family: Roboto;
   width: 100% !important;
   letter-spacing: 1px; 
@@ -281,6 +289,17 @@ section {
     }
   }
 }
+@media only screen and (max-width: $xs-min-width) {
+  .site-footer {
+    .copyright {
+      display: block;
+    }
+    .likesBox {
+      display: block;
+    }
+  }
+}
+
 .text-block {
   margin-top: 31px;
   margin-bottom: 31px;
