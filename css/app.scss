@@ -97,7 +97,9 @@ p {
 }
 
 .btn:active {
-  background-color: #06d7e3;
+  background-color: #00acc1;
+  color: #ffffff !important;
+  border-color: #00acc1;
 }
 
 .btn:visited {
@@ -269,14 +271,17 @@ section {
     margin-right: 20px;
   }
 
+  ul {
+    margin-top: 25px;
+  }
+
   .copyright {
-    margin-top: 38px;
+    margin-top: 12px;
     display: inline-block;
   }
 
   .likesBox {
     display: inline-block;
-    margin-top: 36px;
     margin-right: 20px;
     float: right;
     img.social-icon {
@@ -296,6 +301,7 @@ section {
     }
     .likesBox {
       display: block;
+      float: none;
     }
   }
 }
