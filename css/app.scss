@@ -178,7 +178,7 @@ p {
   position: relative;
   overflow: hidden;
   height: 586px;
-  background: url("/img/background.jpg") center no-repeat;
+  background: url("../img/background.jpg") center no-repeat;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -274,7 +274,7 @@ section {
 }
 
 .background-picture {
-  background: url("/img/background_second.jpg") center no-repeat;
+  background: url("../img/background_second.jpg") center no-repeat;
   overflow: hidden;
   height: 408px;
   -o-background-size: cover;
@@ -364,7 +364,7 @@ section {
 }
 
 .map {
-  background: url("/img/map.jpg") center no-repeat;
+  background: url("../img/map.jpg") center no-repeat;
   overflow: hidden;
   height: 600px;
   -o-background-size: cover;
