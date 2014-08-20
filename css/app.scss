@@ -202,6 +202,7 @@ p {
   background-color: $color-1;
   color: #ffffff;
   border-radius: 0;
+  z-index: -1;
 }
 
 header.logo {
@@ -258,7 +259,11 @@ section {
 
 .bordered {
   border-bottom: 6px solid #0198a1;
+}
+
+article {
   padding-bottom: 70px;
+  background-color: #ffffff;
 }
 
 @media only screen and (min-width: $x-min-width) {
