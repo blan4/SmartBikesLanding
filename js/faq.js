@@ -1,12 +1,17 @@
 (function($){
   $(document).ready(function(){
-    $('.answer').css('display', 'none');
+    $('.answer').hide();
 
     $(document).on('click', '.question', function(event) {
       event.preventDefault();
-      $('.answer').css('display', 'none');
       var $self = $(this);
-      $('.answer[data-answer='+ $self.data('question') +']').css('display', 'block');
+      var $answer = $('.answer[data-answer='+ $self.data('question') +']');
+      if (!$answer.is(':hidden')) {
+        $answer.hide();
+      } else {
+        $('.answer').hide();
+        $answer.show();
+      }
     });
   });
 })(jQuery);

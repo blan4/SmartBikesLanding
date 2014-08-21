@@ -290,7 +290,6 @@ article {
 .bordered-picture {
   padding-right: 0;
   padding-left: 0;
-  border-bottom: 6px solid #0198a1;
 }
 
 .map-picture {
@@ -408,14 +407,18 @@ article {
   line-height: 1.5;
   cursor: hand;
   cursor: pointer;
-}
+  a {
+    text-decoration: none;
+  }
 
-.question-active {
-
+  a:hover {
+    color: #000000;
+  }
 }
 
 .answer {
+  overflow: hidden;
   font-weight: 300 !important;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   margin-top: -23px;
 }
