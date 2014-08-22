@@ -3,7 +3,8 @@
     <ul>
       <li class="likesBox"> 
         <p class="share">Поделиться</p>     
-        <a href="" onclick="Share.vk('{{ site.url }}', '{{ site.title }}', '{{site.description }}', '{{ site.url }}/img/smartbikes_logo_text.jpg');return false;">
+        <a href="http://vk.com/share.php?url={{ site.url }}&title={{ site.title }}&description={{ site.description }}" onclick="javascript:window.open(this.href,
+    '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
           <img src="img/vk.png" class="social-icon" />
         </a>
         
